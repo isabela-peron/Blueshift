@@ -1,0 +1,30 @@
+{
+	"name": "AzureSqlTable4",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase4",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "cotacaoCompra",
+				"type": "varchar"
+			},
+			{
+				"name": "cotacaoVenda",
+				"type": "varchar"
+			},
+			{
+				"name": "dataHoraCotacao",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "dolar_isabela"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
